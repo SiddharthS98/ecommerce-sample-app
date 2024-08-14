@@ -1,1 +1,1 @@
-# ecommerce-sample-app
+### A Sample Ecommerce application deployed on AWS Cloud
