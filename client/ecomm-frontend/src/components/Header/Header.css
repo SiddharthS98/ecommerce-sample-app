@@ -1,0 +1,9 @@
+.header {
+    background-color: rgb(10, 10, 92);
+    color: white;
+    padding: 1rem 1rem 0.1rem 1rem;
+}
+
+.para {
+    color: white !important;
+}
