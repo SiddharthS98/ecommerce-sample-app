@@ -63,6 +63,10 @@ app.post("/buyProduct", (req, res) => {
   );
 });
 
+app.get("/", (req, res) => {
+  res.send("Sample Ecommerce App Route added");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
