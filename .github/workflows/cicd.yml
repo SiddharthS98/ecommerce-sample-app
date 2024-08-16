@@ -14,8 +14,10 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
+        working-directory: ./server
         run: npm install
       - name: Generate deployment package zip
+        working-directory: ./server
         run: zip -r ecommerce-sample-app-build.zip .
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v22
