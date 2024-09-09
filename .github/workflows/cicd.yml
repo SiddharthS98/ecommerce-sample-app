@@ -27,5 +27,5 @@ jobs:
           application_name: 'ecommerce-app'
           environment_name: 'Staging-Ecommerce-app-env-1'
           version_label: ${{ github.sha }}
-          region: eu-north-1
+          region: us-east-1
           deployment_package: ./server/ecommerce-sample-app-build.zip
