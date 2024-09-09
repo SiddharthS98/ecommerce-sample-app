@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         working-directory: ./server
         run: npm install
-      - name: Generate deployment package zip
+      - name: Generate deployment package zip for staging environment
         working-directory: ./server
         run: zip -r ecommerce-sample-app-build.zip .
       - name: Deploy to EB
@@ -24,8 +24,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.ACCESS_KEY }}
           aws_secret_key: ${{ secrets.SECRET_ACCESS_KEY }}
-          application_name: 'backend-project-1'
-          environment_name: 'Backend-project-1-env'
+          application_name: 'ecommerce-app'
+          environment_name: 'Staging-Ecommerce-app-env-1'
           version_label: ${{ github.sha }}
           region: eu-north-1
           deployment_package: ./server/ecommerce-sample-app-build.zip
