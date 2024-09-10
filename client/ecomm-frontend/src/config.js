@@ -1,2 +1,5 @@
-export const backendURL =
-  "http://backend-project-1-env.eba-pz9qjpip.eu-north-1.elasticbeanstalk.com";
+const stagingUrl =
+  "http://staging-environment-ecommerce-app.eu-north-1.elasticbeanstalk.com";
+const productionUrl =
+  "http://production-environment-ecommerce-app.eu-north-1.elasticbeanstalk.com";
+export const backendURL = stagingUrl;
