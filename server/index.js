@@ -71,6 +71,10 @@ app.get("/staging", (req, res) => {
   res.send("Sample Ecommerce App Route added on staging env");
 });
 
+app.get("/production", (req, res) => {
+  res.send("Sample Ecommerce App Route added on production env");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
