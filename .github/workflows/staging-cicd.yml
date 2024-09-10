@@ -2,8 +2,8 @@ name: CICD
 on:
   push:
     branches:
-      - main
-jobs:
+      - staging
+jobs:  
   build-and-deploy:
     runs-on: [ ubuntu-latest ]
     steps:
